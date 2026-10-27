@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤖 SaaS AI — Next-Gen Multi-Modal AI Platform
 
-## Getting Started
+[![Next.js 14](https://img.shields.io/badge/Next.js-14_(App_Router)-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API_Edge_Streaming-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
 
-First, run the development server:
+A full-stack, enterprise-grade AI Software-as-a-Service (SaaS) platform built with **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS**. Features real-time edge streaming, multi-modal generations (Conversation, Code, Image, Music, and Video), rate limiting, and subscription management.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Key Architectural Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **⚡ Edge API Streaming:** Low-latency responses streamed directly from OpenAI models to the client using Vercel AI SDK and Edge runtime.
+- **🛡️ Secure Authentication & User Tiers:** Robust authentication with tier-based quota tracking and rate limiting.
+- **💳 Subscription & Billing:** Automated subscription lifecycle, webhook handling, and customer billing portal integration.
+- **🎨 Modern Dark UI/UX:** Responsive, accessible components crafted with Tailwind CSS and Radix UI primitives.
+- **📊 Usage Analytics & Limits:** Real-time generation counters with visual upgrade prompts upon quota exhaustion.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🛠️ Tech Stack & Libraries
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js 14 (React 18, App Router, Server Components, Server Actions)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, Lucide React Icons
+- **AI Integrations:** OpenAI API (GPT-4, DALL-E, Whisper), Replicate AI
+- **Database / ORM:** Prisma ORM with PostgreSQL / MongoDB
+- **Deployment:** Vercel Edge Network
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
+- Node.js 18.x or later
+- npm or yarn or pnpm
+- OpenAI API Key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/HasanCSE-IYI/saas-ai.git
+   cd saas-ai
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+   Create a `.env.local` file in the root directory:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key
+   DATABASE_URL=your_database_url
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
+   ```
+
+4. **Run the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 👨‍💻 Author
+
+**Mahmud Al Hasan**  
+- Portfolio: [hasancse-iyi.github.io](https://hasancse-iyi.github.io/portfolio-one/)  
+- LinkedIn: [in/mahmud-al-hasan](https://www.linkedin.com/in/mahmud-al-hasan/)  
+- GitHub: [@HasanCSE-IYI](https://github.com/HasanCSE-IYI)
